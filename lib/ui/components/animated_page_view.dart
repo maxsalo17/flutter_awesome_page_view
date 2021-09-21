@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-class AnimatedPageView extends StatefulWidget {
+class ParalaxAnimatedPageView extends StatefulWidget {
   final int itemsCount;
   final Function(BuildContext, int, double) builder;
 
-  const AnimatedPageView(
+  const ParalaxAnimatedPageView(
       {Key? key, required this.itemsCount, required this.builder})
       : super(key: key);
   @override
-  _AnimatedPageViewState createState() => _AnimatedPageViewState();
+  _ParalaxAnimatedPageViewState createState() =>
+      _ParalaxAnimatedPageViewState();
 }
 
-class _AnimatedPageViewState extends State<AnimatedPageView> {
+class _ParalaxAnimatedPageViewState extends State<ParalaxAnimatedPageView> {
   // ignore: prefer_final_fields
   PageController _controller = PageController();
 

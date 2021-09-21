@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class AnimatedPageItem extends InheritedWidget {
+class AnimatedItem extends InheritedWidget {
   final double animation;
   final bool logAnimationValue;
-  const AnimatedPageItem(
+  const AnimatedItem(
       {Key? key,
       this.animation = 1.0,
       this.logAnimationValue = false,
       required Widget child})
       : super(key: key, child: child);
 
-  static AnimatedPageItem? of(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<AnimatedPageItem>();
+  static AnimatedItem? of(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<AnimatedItem>();
   }
 
   @override
-  bool updateShouldNotify(AnimatedPageItem oldWidget) {
+  bool updateShouldNotify(AnimatedItem oldWidget) {
     return true;
   }
 }
