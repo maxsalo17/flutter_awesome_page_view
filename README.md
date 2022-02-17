@@ -1,4 +1,4 @@
-# awesome_onboading
+# flutter_awesome_page_view
 
 A new Flutter project.
 

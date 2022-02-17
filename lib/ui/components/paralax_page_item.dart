@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:awesome_onboading/ui/components/animated_page_item.dart';
+import 'package:flutter_awesome_page_view/ui/components/animated_page_item.dart';
 import 'package:flutter/material.dart';
 
 class ParalaxItem {

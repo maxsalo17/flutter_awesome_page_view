@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.awesome_onboading">
+    package="com.example.flutter_awesome_page_view">
    <application
-        android:label="awesome_onboading"
+        android:label="flutter_awesome_page_view"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

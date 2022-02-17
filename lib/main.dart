@@ -1,9 +1,6 @@
-import 'dart:html';
-
-import 'package:awesome_onboading/ui/components/animated_page_item.dart';
-import 'package:awesome_onboading/ui/components/animated_page_view.dart';
-import 'package:awesome_onboading/ui/components/gestured_paralax.dart';
-import 'package:awesome_onboading/ui/components/paralax_page_item.dart';
+import 'package:flutter_awesome_page_view/ui/components/animated_page_item.dart';
+import 'package:flutter_awesome_page_view/ui/components/animated_page_view.dart';
+import 'package:flutter_awesome_page_view/ui/components/paralax_page_item.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,6 +35,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     final pages = [
+      ParalaxPage(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [Color(0xFFF5F4F4), Color(0xFFBBBBBB)])),
+        items: [
+          ParalaxItem(
+            depth: 3.0,
+            child: Container(decoration: BoxDecoration()),
+          )
+        ],
+      ),
       ParalaxPage(
         backgroundColor: Color(0xF5F4F4),
         decoration: BoxDecoration(
